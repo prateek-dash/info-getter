@@ -1,7 +1,5 @@
 # info-getter
 
-C++ REST service for ingesting and querying aggregated weather sensor metrics.
-
 ## Docker
 
 ```bash
