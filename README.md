@@ -129,4 +129,3 @@ curl -X POST http://localhost:8080/api/v1/queries/aggregate \
 - All timestamps: UTC, ISO-8601
 - Thread-safe SQLite (`SQLITE_THREADSAFE=1`)
 - Dependencies auto-fetched: cpp-httplib, nlohmann/json, SQLite3, GoogleTest
-- Code style: `.clang-format` provided (Google C++ style; install `clang-format` to apply)
