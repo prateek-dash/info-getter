@@ -1,0 +1,19 @@
+services:
+  info-getter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: info-getter:latest
+    container_name: info-getter
+    ports:
+      - "8080:8080"
+    environment:
+      INFO_GETTER_HOST: "0.0.0.0"
+      INFO_GETTER_PORT: "8080"
+      INFO_GETTER_DB_PATH: "/data/info_getter.db"
+    volumes:
+      - info_getter_data:/data
+    restart: unless-stopped
+
+volumes:
+  info_getter_data:
